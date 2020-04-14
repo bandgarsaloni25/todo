@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content %}
+    <div class="bg-image"></div>
+    
+        
+        
+    
+    <div class="bg-text">
+    <h1 style="font-size:9vw;font-family: 'Dynalight'">TO-DO LIST</h1>
+    <p style="font-size:3vw;font-family: 'Aladin'">PUT A TODO IN YOUR TANK</p>
+    </div>
+  
+    {% if user.is_authenticated %}
+        <p>Name: {{user.first_name}} {{user.last_name}}</p>
+        <p>Username: {{user.username}}</p>
+        <p>Email: {{user.email}}</p>
+    {% endif %}
+{% endblock %}
