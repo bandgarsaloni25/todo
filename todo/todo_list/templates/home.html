@@ -10,9 +10,5 @@
     <p style="font-size:3vw;font-family: 'Aladin'">PUT A TODO IN YOUR TANK</p>
     </div>
   
-    {% if user.is_authenticated %}
-        <p>Name: {{user.first_name}} {{user.last_name}}</p>
-        <p>Username: {{user.username}}</p>
-        <p>Email: {{user.email}}</p>
-    {% endif %}
+    
 {% endblock %}
